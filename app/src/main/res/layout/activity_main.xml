@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="80dip"
+            android:gravity="bottom"
+            android:text="账号:"
+            android:textColor="#000000"
+            android:textSize="8pt" />
+
+
+        <EditText
+            android:id="@+id/lg_account"
+            android:layout_width="235dip"
+            android:layout_height="40dip"
+            android:layout_alignBaseline="@+id/tv_zh"
+            android:layout_alignBottom="@+id/tv_zh"
+            android:layout_toRightOf="@+id/tv_zh"
+            android:ems="10"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/lg_code"
+            android:layout_width="235dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/lg_account"
+            android:layout_below="@+id/lg_account"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:maxLines="20"
+            android:scrollHorizontally="true" />
+        <TextView
+            android:id="@+id/tv_mima"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginTop="140dp"
+            android:layout_alignLeft="@+id/tv_zh"
+            android:gravity="bottom"
+            android:text="密码:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="280dip"
+        android:layout_height="55dp"
+        android:layout_marginLeft="45dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="280dip"
+        android:layout_height="55dp"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="10dip"
+        android:text="注册"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="280dip"
+        android:layout_height="55dp"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="10dip"
+        android:text="清空数据"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="280dip"
+        android:layout_height="55dp"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="10dip"
+        android:text="展示数据"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+</LinearLayout>

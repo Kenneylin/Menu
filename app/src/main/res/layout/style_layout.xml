@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/style_foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水煮肉片"
+        android:textSize="40dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用料"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/style_like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250dp"
+            android:text="收藏" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/style_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主料"
+        android:textSize="20dp" />
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/Style_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+    </ListView>
+
+
+</LinearLayout>

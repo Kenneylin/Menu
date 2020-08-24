@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mydb">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="菜谱"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Manager"></activity>
+        <activity android:name=".Chuanc" />
+        <activity android:name=".Yu" />
+        <activity android:name=".Dumplings" />
+        <activity android:name=".Records" />
+        <activity android:name=".Bolied_meat" />
+
+        <service
+            android:name=".MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Chuan" />
+        <activity android:name=".Cuisine" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
